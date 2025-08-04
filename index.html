@@ -6,12 +6,27 @@
   <title>Meet Rajbhoj | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #6c63ff;
+      --secondary: #d1d1ff;
+      --bg: #ffffff;
+      --text: #333;
+    }
+
+    body.dark {
+      --primary: #ffffff;
+      --secondary: #333;
+      --bg: #181818;
+      --text: #f1f1f1;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #6c63ff, #d1d1ff);
-      color: #333;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--text);
       scroll-behavior: smooth;
+      transition: background 0.5s, color 0.5s;
     }
 
     header {
@@ -31,7 +46,21 @@
     }
 
     nav a:hover {
-      color: #d1d1ff;
+      color: var(--secondary);
+    }
+
+    .toggle-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #4e48d9;
     }
 
     .hero {
@@ -46,22 +75,23 @@
       max-width: 900px;
       margin: 50px auto;
       padding: 20px;
-      background: white;
+      background: var(--bg);
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s ease forwards;
+      transition: background 0.5s, color 0.5s;
     }
 
     h2 {
-      color: #6c63ff;
+      color: var(--primary);
       margin-bottom: 1rem;
     }
 
     .highlight-box {
       background: #f5f5ff;
-      border-left: 5px solid #6c63ff;
+      border-left: 5px solid var(--primary);
     }
 
     .edu-box p {
@@ -69,7 +99,7 @@
     }
 
     #contact a {
-      color: #6c63ff;
+      color: var(--primary);
       text-decoration: none;
     }
 
@@ -90,31 +120,80 @@
         transform: translateY(0);
       }
     }
+
+    .typing-banner {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 1.4rem;
+      background: var(--primary);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .contribution-img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--secondary);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Meet Rajbhoj</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div>
+      <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
   </header>
+
+  <div class="typing-banner">
+    <span id="typed"></span>
+  </div>
 
   <section class="hero">
     <h2>Hello, I'm Meet 👋</h2>
     <p>BTech CSE Student | Web Dev Beginner | Creative Explorer</p>
   </section>
 
-  <section id="about">
+  <section id="about" class="card">
     <h2>About Me</h2>
     <p>I’m a beginner exploring web development, video editing, and more. Currently pursuing BTech in Computer Science and Engineering.</p>
   </section>
 
-  <section id="education" class="highlight-box">
+  <section id="education" class="highlight-box card">
     <h2>📘 My Education</h2>
     <div class="edu-box">
       <p>🎓 I’m currently pursuing <strong>BTech in Computer Science</strong> at <strong>Ramdeobaba College of Engineering</strong>.</p>
@@ -123,13 +202,13 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="card">
     <h2>Projects</h2>
     <p>🔹 Library Management System – Python + MySQL</p>
     <p>🔹 Portfolio Website using HTML and CSS</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="card">
     <h2>Skills</h2>
     <ul>
       <li>HTML, CSS</li>
@@ -139,14 +218,34 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="card">
     <h2>📫 Contact Me</h2>
     <p>Feel free to reach out via email for collaborations or questions!</p>
     <p><strong>Email:</strong> <a href="mailto:meetrajbhoj706@gmail.com">meetrajbhoj706@gmail.com</a></p>
   </section>
 
+  <section id="contributions" class="card">
+    <h2>🧠 GitHub Contributions</h2>
+    <img class="contribution-img" src="https://ghchart.rshah.org/6c63ff/meeeetttt" alt="Meet's GitHub chart" />
+  </section>
+
   <footer>
     <p>© 2025 Meet Rajbhoj. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['Welcome to My Portfolio!', 'I love building things 💻', 'Let\'s Learn and Create Together!'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 2000,
+      loop: true
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
