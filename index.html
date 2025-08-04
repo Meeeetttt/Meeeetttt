@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Rajbhoj | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6c63ff, #d1d1ff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d1d1ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+      background: linear-gradient(145deg, #6c63ff, #8d85f0);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    h2 {
+      color: #6c63ff;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-box {
+      background: #f5f5ff;
+      border-left: 5px solid #6c63ff;
+    }
+
+    .edu-box p {
+      margin: 0.5rem 0;
+    }
+
+    #contact a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Meet</h1>
+    <h1>Meet Rajbhoj</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -19,8 +105,8 @@
   </header>
 
   <section class="hero">
-    <h2>Hi, I'm Meet 👋</h2>
-    <p>Aspiring Computer Science Student & Developer</p>
+    <h2>Hello, I'm Meet 👋</h2>
+    <p>BTech CSE Student | Web Dev Beginner | Creative Explorer</p>
   </section>
 
   <section id="about">
@@ -29,44 +115,38 @@
   </section>
 
   <section id="education" class="highlight-box">
-  <h2>📘 My Education</h2>
-  <div class="edu-box">
-    <p>🎓 I’m currently pursuing <strong>BTech in Computer Science</strong> at <strong>Ramdeobaba College of Engineering</strong>.</p>
-    <p>🏫 I completed my <strong>schooling</strong> from <strong>Prerna International School</strong> in 2022.</p>
-    <p>🏫 I completed my <strong>high school</strong> from the same school in 2024.</p>
-  </div>
-</section>
-
+    <h2>📘 My Education</h2>
+    <div class="edu-box">
+      <p>🎓 I’m currently pursuing <strong>BTech in Computer Science</strong> at <strong>Ramdeobaba College of Engineering</strong>.</p>
+      <p>🏫 I completed my <strong>schooling</strong> from <strong>Prerna International School</strong> in 2022.</p>
+      <p>🏫 I completed my <strong>high school</strong> from the same school in 2024.</p>
+    </div>
+  </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>Python + MySQL project built during school.</p>
-      <a href="https://github.com/meeeetttt/library-management" target="_blank">View on GitHub</a>
-    </div>
+    <p>🔹 Library Management System – Python + MySQL</p>
+    <p>🔹 Portfolio Website using HTML and CSS</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Python (Basic)</li>
+      <li>HTML, CSS</li>
+      <li>Python (Basics)</li>
       <li>MySQL</li>
-      <li>Photo/Video Editing (Beginner)</li>
+      <li>Photo & Video Editing</li>
     </ul>
   </section>
 
-    <section id="contact">
-  <h2>📫 Contact Me</h2>
-  <p>Feel free to reach out via email for collaborations or queries!</p>
-  <p><strong>Email:</strong> <a href="mailto:meetrajbhoj706@gmail.com">meetrajbhoj706@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/meeeetttt" target="_blank">@meeeetttt</a></p>
-</section>
+  <section id="contact">
+    <h2>📫 Contact Me</h2>
+    <p>Feel free to reach out via email for collaborations or questions!</p>
+    <p><strong>Email:</strong> <a href="mailto:meetrajbhoj706@gmail.com">meetrajbhoj706@gmail.com</a></p>
+  </section>
 
   <footer>
-    <p>© 2025 Meet. All rights reserved.</p>
+    <p>© 2025 Meet Rajbhoj. All rights reserved.</p>
   </footer>
 </body>
 </html>
