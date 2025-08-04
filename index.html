@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet Rajbhoj | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Orbitron:wght@500&family=Raleway:wght@700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
   <style>
@@ -64,7 +64,6 @@
     }
 
     .hero {
-      position: relative;
       text-align: center;
       padding: 140px 30px;
       background: #000;
@@ -107,7 +106,7 @@
     .floating-icons span {
       position: absolute;
       display: block;
-      color: rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.2);
       font-size: 24px;
       animation: floatIcon 12s linear infinite;
     }
@@ -143,8 +142,71 @@
       margin-bottom: 1rem;
     }
 
+    .highlight-box {
+      background: #f5f5ff;
+      border-left: 5px solid var(--primary);
+    }
+
     .edu-box p {
       margin: 0.5rem 0;
+    }
+
+    #contact a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .typing-banner {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 1.4rem;
+      background: var(--primary);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .contribution-img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     .card {
@@ -160,52 +222,20 @@
       transform: translateY(-5px);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     }
-
-    #contact a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: white;
-    }
-
-    .typing-banner {
-      text-align: center;
-      padding: 20px;
-      color: white;
-      font-size: 1.4rem;
-      background: var(--primary);
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Meet Rajbhoj</h1>
-    <nav>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div>
-      <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    </div>
-  </header>
+  <h1>Meet Rajbhoj</h1>
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+</header>
 
   <div class="typing-banner">
     <span id="typed"></span>
@@ -213,7 +243,13 @@
 
   <section class="hero">
     <div class="floating-icons">
-      <span>💻</span><span>🚀</span><span>🎨</span><span>🧠</span><span>📱</span><span>⚙️</span><span>🌐</span>
+      <span>💻</span>
+      <span>🚀</span>
+      <span>🎨</span>
+      <span>🧠</span>
+      <span>📱</span>
+      <span>⚙️</span>
+      <span>🌐</span>
     </div>
     <h2>Hello, I'm Meet 👋</h2>
     <p>BTech CSE Student | Web Dev Beginner | Creative Explorer</p>
@@ -231,8 +267,9 @@
   <section id="projects" class="card">
     <h2>💡 Projects</h2>
     <div class="project-list">
-      <p><strong>Portfolio Website</strong>: This site! Built with HTML, CSS, animations, and GitHub Pages</p>
-      <p><strong>Library Management System</strong>: Python + MySQL system made as part of school final project</p>
+      <p><strong>Portfolio Website</strong>: The site you're viewing right now! Built with HTML, CSS, and animated effects.</p>
+      <p><strong>Library Management System</strong>: Python + MySQL-based system for managing a library (Class 12 project).</p>
+      <!-- Add more projects here if you'd like -->
     </div>
   </section>
 
@@ -243,29 +280,18 @@
 
   <footer>
     <p>Connect with me:</p>
-    <p><a href="https://www.linkedin.com/in/meet-rajbhoj" target="_blank" style="color:#6c63ff;">🔗 LinkedIn: Meet Rajbhoj</a></p>
-    <p><a href="https://github.com/meeeetttt" target="_blank" style="color:#6c63ff;">💻 GitHub: meeeetttt</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/meet-rajbhoj" target="_blank" style="color:#6c63ff; text-decoration:none;">🔗 LinkedIn: Meet Rajbhoj</a>
+    </p>
+    <p>
+      <a href="https://github.com/meeeetttt" target="_blank" style="color:#6c63ff; text-decoration:none;">💻 GitHub: meeeetttt</a>
+    </p>
   </footer>
-
-  <!-- JS Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-
-    var typed = new Typed("#typed", {
-      strings: [
-        "Aspiring Software Developer 💻",
-        "Creative Explorer 🎨",
-        "Web Developer in Progress 🌐",
-        "Python + MySQL Enthusiast 🐍",
-        "Dreaming Big, Building Small 🚀"
-      ],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
+<script>
+  // Dark mode toggle
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
+</script>
 </body>
 </html>
