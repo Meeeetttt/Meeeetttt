@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet Rajbhoj | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #6c63ff;
@@ -65,16 +65,25 @@
 
     .hero {
       text-align: center;
-      padding: 100px 30px;
+      padding: 120px 30px;
       color: white;
-      background: linear-gradient(145deg, #6c63ff, #8d85f0);
-      animation: fadeInUp 1s ease forwards;
-      font-size: 1.3rem;
-      font-weight: 500;
-      border-radius: 20px;
+      background: radial-gradient(circle at center, #2b2e4a, #4e54c8);
+      animation: pulse 2s infinite ease-in-out, fadeInUp 1s ease forwards;
+      font-size: 1.5rem;
+      font-family: 'Orbitron', sans-serif;
+      border-radius: 25px;
       margin: 40px auto;
       max-width: 1000px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
     }
 
     section {
@@ -203,8 +212,8 @@
     <h2>📘 My Education</h2>
     <div class="edu-box">
       <p>🎓 I’m currently pursuing <strong>BTech in Computer Science</strong> at <strong>Ramdeobaba University</strong>.</p>
-      <p>🏫 I completed my <strong>schooling</strong> from <strong>Prerna International School</strong> in 2023.</p>
-      <p>🏫 I completed my <strong>high school</strong> from the same school in 2025.</p>
+      <p>🏫 I completed my <strong>schooling</strong> from <strong>Prerna International School</strong> in 2022.</p>
+      <p>🏫 I completed my <strong>high school</strong> from the same school in 2024.</p>
     </div>
   </section>
 
