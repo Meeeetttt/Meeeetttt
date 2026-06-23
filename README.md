@@ -4,9 +4,9 @@
 🚀 BTech CSE Student | RBU '29 | Web Development & DSA Learner
 </h3>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=6C63FF&center=true&vCenter=true&lines=BTech+CSE+Student;Learning+Web+Development;Exploring+Python+%26+MySQL;Loves+Creativity+%26+Code" />
-</p>
+</p> -->
 
 ---
 
