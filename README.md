@@ -1,5 +1,8 @@
 <h1 align="center">Hi 👋, I'm Meet Rajbhoj</h1>
-<h3 align="center">🚀 Aspiring Computer Science Engineer | 💻 Future Developer | 🎨 Creative Explorer</h3>
+
+<h3 align="center">
+🚀 BTech CSE Student | RBU '29 | Web Development & DSA Learner
+</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=6C63FF&center=true&vCenter=true&lines=BTech+CSE+Student;Learning+Web+Development;Exploring+Python+%26+MySQL;Loves+Creativity+%26+Code" />
@@ -9,24 +12,11 @@
 
 ### 🙋‍♂️ About Me
 
-- 🎓 I’m currently pursuing **BTech in Computer Science and Engineering**
-- 🌱 I’m learning **HTML, CSS, Python, MySQL**
-- 🛠️ Working on my **portfolio website** and beginner projects
-- 🎨 Exploring **video & photo editing**
-- 📫 Reach me at: **meetrajbhoj706@gmail.com**
-
----
-
-### 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=meeeetttt&show_icons=true&theme=tokyonight" alt="Meet's GitHub Stats" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=meeeetttt&theme=tokyonight" alt="Meet's GitHub Streak" width="48%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meeeetttt&layout=compact&theme=tokyonight" width="48%"/>
-</p>
+* 🎓 Pursuing **BTech in Computer Science & Engineering** at **Shri Ramdeobaba College of Engineering and Management** (Batch of 2029)
+* 🌱 Currently learning **Web Development (HTML, CSS, JavaScript)** and **Data Structures & Algorithms (DSA)**
+* 💻 Building **portfolio projects** and sharpening my problem-solving skills
+* 🚀 Exploring **Software Development, Open Source, and Hackathons**
+* 📫 Reach me at: **[meetrajbhoj706@gmail.com](mailto:meetrajbhoj706@gmail.com)**
 
 ---
 
@@ -44,6 +34,3 @@
   </a>
 </p>
 
----
-
-> *“Every expert was once a beginner — and I’m just getting started!”*
